@@ -205,4 +205,11 @@ section{
     border-left: 384px solid transparent;
 }
 
-
+.home-img img{
+    position: absolute;
+    top: 50%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    width: 42%;
+    z-index: 1; /* Set z-index higher than .overlay to be on top */
+}
