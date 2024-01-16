@@ -65,8 +65,65 @@
             <div class="overlay"></div>
         </div>  
         <div class="home-img">
-            <img src="Portfolio DP.png" alt="">
+            <img src="Portflio DP 2.png" alt="">
         </div>
     </section>
+    <!-- Starting About Section -->
+    <br>
+    <div class="about" id="about">
+        <div class="conrainer">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Portfolio DP.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
+                        labore repellendus. Autem hic ea odio, molestiae aliquam modi ad? 
+                        Ipsa iusto a delectus reprehenderit eos exercitationem cupiditate, optio ex quia!</p>
+                      
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('work_experience')">Work Experience</p>
+                            <p class="tab-links"  onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('life_achievements')">Life Achievements</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="work_experience">
+                            <ul>
+                            <li><span>2024 - Accenture</span><br>I have been seleced for the ASE role in Accenture.</li>
+                            </ul>
+                        </div> 
+                         <div class="tab-contents" id="education">
+                            <ul>
+                            <li><span>2020-2024 JIS College Of Engineering</span><br>My current CGPA avg is 9.02.</li>
+                            <li><span>2020 - ISC</span><br>I have secured 88.75% in my ISC exam.</li>
+                            <li><span>2018 - ICSE</span><br>I have secured 85.2% in my ICSE exam.</li>
+                            </ul>
+                        </div> 
+                        <div class="tab-contents" id="life_achievements">
+                            <ul>
+                            <li><span>Winner of APP-E-Trasure</span><br>With my project team, I won the inter college Mobile App building competition. </li>
+                            <li><span>School Captain</span><br>In 2019, I was elected as the School Captain by the vote of Teachers among 30+ other nominated students.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 </html>
