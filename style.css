@@ -19,7 +19,29 @@
     --circleSkill-color: #0BA3B2;
     --shadow-color: rgba(0, 0, 0, .2);
 }
-
+#cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    pointer-events: none; /* Ensures the cursor doesn't interfere with other elements */
+    display: none;
+}
+#custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    border-radius: 50%;
+    mix-blend-mode: difference; /* Make the cursor color inverted */
+    pointer-events: none;
+    display: none;
+}
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -28,6 +50,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    cursor: none;
 }
 
 .header {
@@ -40,6 +63,7 @@ body {
     display: flex;
     z-index: 100;
     transition: .5s;
+    cursor: pointer;
 }
 .header.sticky {
     background: var(--bg-color);
