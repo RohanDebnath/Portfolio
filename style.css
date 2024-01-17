@@ -634,13 +634,16 @@ span{
     background: var(--bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
-    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    box-shadow: 0 .1rem .5rem var(--text-color);
 
 }
 .contact form .input-box input{
     width: 49%;
 }
 .contact form textarea{
+    resize: none;
+}
+.contact form textarea:hover{
     resize: none;
 }
 .contact form .btn{
