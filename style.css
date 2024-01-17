@@ -529,10 +529,12 @@ section{
 
 .projects{
     padding-bottom:10rem ;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .projects h2{
     margin-bottom:4rem ;
+    font-size: 3.5rem;
+    /* align-items: center; */
 }
 
 .projects .project-container{
@@ -596,4 +598,7 @@ section{
 .project-layer a i{
     font-size: 2rem;
     color: var(--text-color);
+}
+span{
+    color: var(--main-color);
 }
