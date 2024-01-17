@@ -80,7 +80,7 @@ body {
     display: flex;
     z-index: 100;
     transition: .5s;
-    cursor: pointer;
+    cursor: auto;
 }
 .header.sticky {
     background: var(--bg-color);
@@ -308,7 +308,7 @@ section{
     font-weight: 600px;
     font-size: 3.5rem;
     font-weight: 600;
-    color: var(--main-color);
+    color: var(--text-color);
 }
 
 .tab-titles{
@@ -358,6 +358,10 @@ section{
 }
 /* Skill Section start  */
 
+.skills h2{
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+}
 .container{
     position: relative;
     width: 470px;
@@ -653,4 +657,40 @@ span{
 .contact form .btn:hover{
     background: transparent;
     border-color: var(--main-color);
+}
+
+/* Footer Area */
+
+.footer{
+    cursor: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 7%;
+    background: var(--main-color);
+    z-index: 100;
+}
+
+.footer p{
+    font-size: 1.6rem;
+    color: var(--white-color);
+}
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    pad: .8rem;
+    background-color: var(--bg-color);
+    border: 0.2rem solid var(--text-color);
+    outline: 0.2rem transparent;
+    transition: .5r ease;
+    border-radius: 50%;
+}
+.footer-iconTop a:hover{
+    outline-color: var(--white-color);
+}
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color: var(--text-color);
 }
