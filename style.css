@@ -42,6 +42,23 @@
     pointer-events: none;
     display: none;
 }
+#progress-bar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Adjust the height of the progress bar */
+    background-color: transparent; /* Initial color of the progress bar */
+    z-index: 1000;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: var(--main-color); /* Color of the progress bar when scrolled */
+    transition: width 0.1s ease;
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
