@@ -231,7 +231,27 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: ProfessionRotate 10s ease infinite;
 }
+@keyframes ProfessionRotate {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(72deg);
+    }
+    40% {
+        transform: rotate(144deg);
+    }
+    60% {
+        transform: rotate(216deg);
+    }
+    80% {
+        transform: rotate(286deg);
+    }
+}
+
+
 .home .profession-box .profession{
     position: absolute;
     display: flex;
