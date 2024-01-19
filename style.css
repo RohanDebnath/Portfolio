@@ -933,6 +933,7 @@ span{
 @media(max-width: 450px){
     html{
         font-size: 50%;
+
     }
     #darkMode-icon{
         top: 1em;
@@ -941,21 +942,34 @@ span{
     #menu-icon{
         margin-right: 3.8em;
     }
-    .home{
+    .home .home-content{
+        margin-top: 5%;
         padding: 0,3%,3rem;
     }
+    .home .btn{
+        margin-bottom: 31rem;
+        /* padding: 2px; */
+    }
+
     .home .profession-container .profession:nth-child(1){
-        transform: rotate(-90deg) translate(-110px,-220px);
-    }
-    .home .profession-container .profession:nth-child(2){
-        transform: rotate(0deg) translate(5px,-335px);
-    }
-    .home .profession-container .profession:nth-child(3){
-        transform: rotate(-90deg) translate(-105px,-440px);
+        transform: rotate(0deg) translate(100,-220px);
     }
     .home .profession-container .profession:nth-child(4){
-        transform: rotate(180deg) translate(-210px,-335px);
+        transform: rotate(-72deg) translate(100,-335px);
     }
+    .home .profession-container .profession:nth-child(3){
+        transform: rotate(121deg) translate(100,-340px);
+    }
+    .home .profession-container .profession:nth-child(4){
+        display: none;
+        transform: rotate(144deg) translate(300px, -145px);
+    }
+    
+    .home .profession-container .profession:nth-child(5){
+        display: none;
+        transform: rotate(-144deg) translate(40px, -260px);
+    }
+    
     .contact form .input-box input{
         width: 100%;
     }
@@ -987,7 +1001,20 @@ span{
         justify-content: center; */
         margin-right: 5%;
     } 
-
+    .skills .container{
+        top: 0;
+        right: 4.7rem;
+        transform: scale(0.66);
+    }
+    .skills .container .contentSkillBX{
+        top: 30%;
+        left: 35%;
+    }
+    .projects .project-container .project-box p{
+        display: none;
+    }
+    
+   
     @media (max-width:365) {
         .about-img img{
             width: 90vw;
