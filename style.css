@@ -929,16 +929,20 @@ span{
         grid-template-columns:1fr ;
     }
 }
-
+/* Screen of Mine */
 @media(max-width: 450px){
     html{
         font-size: 50%;
     }
     #darkMode-icon{
-        right: 6rem;
+        top: 1em;
+        right: 8em;
+    }
+    #menu-icon{
+        margin-right: 3.8em;
     }
     .home{
-        padding: 0,3%,30rem;
+        padding: 0,3%,3rem;
     }
     .home .profession-container .profession:nth-child(1){
         transform: rotate(-90deg) translate(-110px,-220px);
@@ -955,6 +959,35 @@ span{
     .contact form .input-box input{
         width: 100%;
     }
+    .about .about-col-1 img{
+        align-items: center;
+        justify-content: center;
+        margin-right: 70%;
+        /* width: 90%; */
+    }
+    .about .about-col-2 h1{
+        align-items: center;
+        justify-content: center;
+        margin-right: 5%;
+    }
+     .about .about-col-2  p{
+        /* align-items: center;
+        justify-content: center; */
+        margin-right:2%;
+        
+    }  
+   .about .about-col-2 .tab-titles{
+        align-items: left;
+        justify-content: left;
+        gap: 2em;
+        /* margin-right: 1%; */
+    }
+    .about .about-col-2 .tab-contents{
+        /* align-items: center;
+        justify-content: center; */
+        margin-right: 5%;
+    } 
+
     @media (max-width:365) {
         .about-img img{
             width: 90vw;
