@@ -778,8 +778,7 @@ span{
 }
 
 @media(max-width :991px){
-    .navbar a:nth-child(1),
-    .navbar a:nth-child(2){
+    .navbar a:nth-child(1){
         color: var(--main-color);
     }
      .navbar a.active::before{
