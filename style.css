@@ -170,6 +170,22 @@ section{
     font-weight: 700;
     margin-bottom: .3rem;
 }
+@keyframes glow {
+    0% { color: var(--main-color); text-shadow: 0 0 10px var(--shadow-color); }
+    50% { color: var(--main-color); text-shadow: 0 0 20px var(--shadow-color), 0 0 30px var(--shadow-color); }
+    100% { color: var(--main-color); text-shadow: 0 0 10px #fff; }
+}
+.home-content h1 span {
+    display: inline-block;
+    opacity: 0; /* Initially hidden */
+    animation: glow 2s infinite;
+    animation-play-state: paused;
+}
+
+/* Add a class to apply the animation to the glowing letters */
+.glow-animation {
+    animation-play-state: running;
+}
 .home-content p{
     font-size: 1.6rem;
 }

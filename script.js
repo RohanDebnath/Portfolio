@@ -193,3 +193,24 @@ ScrollReveal({
 
 // ScrollReveal().reveal('.home-content, .heading',{origin:'top'});
 // ScrollReveal().reveal('.home-img img',{origin:'bottom'});
+
+//Glow Animation
+
+const glowText = document.getElementById('glow-text');
+const letters = glowText.querySelectorAll('span');
+
+// Function to apply the glowing effect to each letter one by one
+function applyGlowEffect(index) {
+    if (index < letters.length) {
+        letters[index].classList.add('glow-animation');
+        letters[index].style.opacity = 1; // Make the letter visible
+        setTimeout(() => {
+            applyGlowEffect(index + 1); // Apply the effect to the next letter after a delay
+        }, 200); // Adjust the delay as needed
+    }
+}
+
+// Call the function to start the glowing effect after a delay
+setTimeout(() => {
+    applyGlowEffect(0);
+}, 500); // Adjust the del
